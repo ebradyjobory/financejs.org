@@ -51,12 +51,14 @@ a small {
   color:#222 !important;
   font-size:13px;
   text-decoration: underline !important;
+  line-height: 30px;
 }
 
 .link-child {
   color:#222 !important;
   font-size:12px;
   margin-left: 20px;
+  line-height: 20px;
 }
 
 .wrapper {
