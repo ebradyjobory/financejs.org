@@ -51,12 +51,13 @@
 
 <pre><code>var finance = new Finance();</code></pre>
 
-<h2>Present Value (PV)</h2>
+<h2>Present Value (PV)<code>finance.PV(rate, cash flow);</code></h2>
 
 <p>Present Value is the current worth of a future sum of money or stream of cash flows given a specified rate of return.<sup><a href="http://www.investopedia.com/terms/p/presentvalue.asp" target="_blank">1</a></sup></p>
 
-<pre><code>finance.PV(rate, cash flow);
+<pre><code>
 // e.g., If rate is 5% and cash flow is $100, the PV is $95.24.
+
 finance.PV(5, 100);
 => 95.24</code></pre>
 
