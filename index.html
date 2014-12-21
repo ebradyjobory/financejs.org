@@ -37,6 +37,7 @@
         <strong><a class="link-child" href="#ROI">Return on Investment (ROI)</a></strong><br>
         <!-- <a class="link-child" href="#IRR">Internal Rate of Return (IRR)</a><br> -->
         <strong><a class="link-child" href="#Amortization">Amortization</a></strong><br>
+        <strong><a class="link-child" href="#PI">Profitability Index (PI)</a></strong><br>
         <a class="link-header" href="#examples">Example Applications</a><br>
         <br><br>
         <p><small>Finance.js was created by <a href="http://essam.io">Essam Al Joubori</a>.</small></p>
@@ -84,7 +85,7 @@
   <h3 id="FV">Future Value (FV)<br>
   <code class="highlight">finance.FV(rate, cash flow, number of periods);</code></h3>
 
-  <p>Future Value (FV) is the value of an asset or cash at a specified date in the future that is equivalent in value to a specified sum today. <sup><a href="http://www.investopedia.com/terms/f/futurevalue.asp" target="_blank">2</a></sup></p>
+  <p>Future Value (FV) is the value of an asset or cash at a specified date in the future that is equivalent in value to a specified sum today<sup><a href="http://www.investopedia.com/terms/f/futurevalue.asp" target="_blank">2</a></sup></p>
 
   <pre><code>// e.g., If rate is 0.5%, cash flow is $1,000, and the number of periods is 12, the FV is $1,061.68.
 
@@ -96,7 +97,7 @@
   <h3 id="NPV">Net Present Value (NPV)<br>
   <code class="highlight">finance.NPV(rate, initial investment, [cash flows]);</code></h3>
 
-  <p>Net Present Value (NPV) compares the money received in the future to an amount of money received today, while accounting for time and interest [through the discount rate]. It's based on the principle of time value of money (TVM), which explains how time affects monetary value.  <sup><a href="http://www.investopedia.com/articles/fundamental-analysis/09/net-present-value.asp" target="_blank">3</a></sup></p>
+  <p>Net Present Value (NPV) compares the money received in the future to an amount of money received today, while accounting for time and interest [through the discount rate]. It's based on the principle of time value of money (TVM), which explains how time affects monetary value.<sup><a href="http://www.investopedia.com/articles/fundamental-analysis/09/net-present-value.asp" target="_blank">3</a></sup></p>
 
   <p><code>[cash flows]</code> takes any number of projected cash flows.</p>
 
@@ -110,7 +111,7 @@
   <h3 id="PP">Payback Period (PP)<br>
   <code class="highlight">finance.PP(number of periods, [cash flows]);</code></h3>
 
-  <p>Payback Period (PP) is the length of time required to recover the cost of an investment.  <sup><a href="http://www.investopedia.com/terms/p/paybackperiod.asp" target="_blank">4</a></sup></p>
+  <p>Payback Period (PP) is the length of time required to recover the cost of an investment.<sup><a href="http://www.investopedia.com/terms/p/paybackperiod.asp" target="_blank">4</a></sup></p>
 
   <p><code>number of periods</code> takes a <code>0</code> value for even cash flows;<br>for uneven cash flows, <code>number of periods</code> takes any number of projected periods.</p>
 
@@ -133,7 +134,7 @@
   <h3 id="ROI">Return on Investment (ROI)<br>
   <code class="highlight">finance.ROI(initial investment, earnings);</code></h3>
 
-  <p>Return on Investment (ROI) is a simple calculation that tells you the bottom line return of any investment.  <sup><a href="http://www.investopedia.com/articles/basics/10/guide-to-calculating-roi.asp" target="_blank">5</a></sup></p>
+  <p>Return on Investment (ROI) is a simple calculation that tells you the bottom line return of any investment.<sup><a href="http://www.investopedia.com/articles/basics/10/guide-to-calculating-roi.asp" target="_blank">5</a></sup></p>
 
   <pre><code>// e.g., If initial investment is -$55,000 and the earnings are $60,000, the return on investment is 9.09%.
 
@@ -158,7 +159,7 @@ Internal Rate of Return (IRR)
   <h3 id="Amortization">Amortization<br>
   <code class="highlight">finance.AM(principal, rate, total number of payments, [type]);</code></h3>
 
-  <p>Amortization is the paying off of debt with a fixed repayment schedule in regular installments over a period of time.  <sup><a href="http://www.investopedia.com/terms/a/amortization.asp" target="_blank">6</a></sup></p>
+  <p>Amortization is the paying off of debt with a fixed repayment schedule in regular installments over a period of time.<sup><a href="http://www.investopedia.com/terms/a/amortization.asp" target="_blank">6</a></sup></p>
 
   <p>For total number of payments which are entered as years, <code>[type]</code> takes a <code>0</code>, whereas for months <code>[type]</code> takes a <code>1</code>.</p>
 
@@ -173,6 +174,18 @@ Internal Rate of Return (IRR)
 
   finance.AM(20000, 7.5, 60, 1);
   => 400.76</code></pre>
+
+  <h3 id="PI">Profitability Index (PI)<br>
+  <code class="highlight">finance.PI(rate, initial investment, [cash flows]);</code></h3>
+
+  <p>Profitability Index (PI) is an index that attempts to identify the relationship between the costs and benefits of a proposed project through the use of a ratio calculated.<sup><a href="http://www.investopedia.com/terms/p/profitability.asp" target="_blank">7</a></sup></p>
+
+  <p><code>[cash flows]</code> takes any number of projected cash flows.</p>
+  
+  <pre><code>// e.g., If rate is 10%, initial investment is -$40,000, cash flows are $18,000, $12,000, $10,000, $9,000, and $6,000, PI is 1.09.
+
+  finance.PI(10, -40000, 18000, 12000, 10000, 9000, 6000);
+  => 1.09</code></pre>
 
 <h2 id="examples">Example Applications</h2>
 <p><a href="https://rapidnpv.herokuapp.com/" target="_blank">RapidNPV</a></p>
