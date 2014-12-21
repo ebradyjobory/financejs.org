@@ -75,6 +75,20 @@ finance.PV(5, 100);
 finance.FV(0.5, 1000, 12);
 => 1068.68</code></pre>
 
+<!-- Net Present Value (NPV) -->
+
+<h3>Net Present Value (NPV)<br>
+<code class="highlight">finance.NPV(discount rate, initial investment, [cash flows]);</code></h3>
+
+<p>Net Present Value compares the money received in the future to an amount of money received today, while accounting for time and interest [through the discount rate]. It's based on the principle of time value of money (TVM), which explains how time affects monetary value.  <sup><a href="http://www.investopedia.com/articles/fundamental-analysis/09/net-present-value.asp" target="_blank">3</a></sup></p>
+
+<p><pre><code>[cash flows]</code></pre> takes any number of projected cash flows.</p>
+
+<pre><code>// e.g., If discount rate is 10%, initial investment is -$1,000, cash flow in year 1 is $200,000, year 2 is $300,000, and year 3 is $200,000, the NPV is $80,015.03.
+
+finance.NPV(10, -500000, 200000, 300000, 200000);
+=> 80015.03</code></pre>
+
 <!--
 <p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
 

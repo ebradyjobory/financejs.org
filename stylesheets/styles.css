@@ -21,7 +21,7 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size:40px;
+  font-size:50px;
   font-weight: lighter;
   margin-top: -10px;
 }
@@ -67,6 +67,7 @@ code, pre {
   font-family:Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal;
   color:#333;
   font-size:12px;
+  word-wrap: break-word;
 }
 
 pre {
