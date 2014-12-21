@@ -60,7 +60,7 @@ blockquote {
 }
 
 .highlight {
-  background-color: rgba(52, 152, 219,0.1);
+  background-color: #e1f0fa;
 }
 
 code, pre {
@@ -68,8 +68,6 @@ code, pre {
   color:#333;
   font-size:12px;
 }
-
-
 
 pre {
   padding:8px 15px;
