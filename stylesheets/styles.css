@@ -108,7 +108,7 @@ header {
   position:fixed;
 }
 
-header ul {
+.download ul {
   list-style:none;
   height:40px;
   
@@ -128,7 +128,7 @@ header ul {
   width:270px;
 }
 
-header li {
+.download li {
   width:89px;
   float:left;
   height:40px;
@@ -154,7 +154,7 @@ header li {
   text-decoration: none;
 }
 
-header ul a {
+.download ul a {
   line-height:1;
   font-size:11px;
   color:rgba(236, 240, 241,1.0);
@@ -169,17 +169,17 @@ strong {
   font-weight:700;
 }
 
-header ul li + li {
+.download ul li + li {
   width:88px;
   border-left:1px solid #fff;
 }
 
-header ul li + li + li {
+.download ul li + li + li {
   border-right:none;
   width:89px;
 }
 
-header ul a strong {
+.download ul a strong {
   font-size:14px;
   display:block;
   color: rgba(236, 240, 241,1.0);
