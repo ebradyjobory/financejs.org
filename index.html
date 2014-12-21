@@ -20,105 +20,127 @@
 
         <p class="view"><a href="https://github.com/essamjoubori/finance.js">View Source Code <small>essamjoubori/financejs</small></a></p>
 
- <ul>
-    <li><a href="https://github.com/essamjoubori/finance.js/zipball/master">Download <strong>ZIP File</strong></a></li>
-    <li><a href="https://github.com/essamjoubori/finance.js/tarball/master">Download <strong>TAR Ball</strong></a></li>
-    <li><a href="https://github.com/essamjoubori/finance.js">Fork On <strong>GitHub</strong></a></li>
-  </ul>
-        
+        <ul>
+          <li><a href="https://github.com/essamjoubori/finance.js/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/essamjoubori/finance.js/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/essamjoubori/finance.js">Fork On <strong>GitHub</strong></a></li>
+        </ul>
+        <ul>
+          <li><a href="#pv">Present Value (PV)</a></li>
+          <li><a href="#fv">Future Value (FV)</a></li>
+        </ul>
         <p><small>Finance.js was created by <a href="http://essam.io">Essam Al Joubori</a>.</small></p>
       </header>
-       <section>
-        <h1>
-<a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span class="octicon octicon-link"></span></a>Finance.js</h1>
+  <section>
+  <h1>
+    <a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span class="octicon octicon-link"></span></a>Finance.js
+  </h1>
 
-<h2>Introduction</h2>
+  <h2>Introduction</h2>
 
-<p>Finance.js makes it easy to incorporate common financial calculations into your application. The library is built on pure JavaScript without any dependencies.</p>
+  <p>Finance.js makes it easy to incorporate common financial calculations into your application. The library is built on pure JavaScript without any dependencies.</p>
 
-<p>This project is <a href="https://github.com/essamjoubori/finance.js">hosted on GitHub</a>. You can report bugs and discuss features on the <a href="https://github.com/essamjoubori/finance.js/issues">GitHub issues page</a>. Finance.js is available for use under the <a href="https://github.com/essamjoubori/finance.js/blob/master/LICENSE.md">MIT software license</a>.
+  <p>This project is <a href="https://github.com/essamjoubori/finance.js">hosted on GitHub</a>. You can report bugs and discuss features on the <a href="https://github.com/essamjoubori/finance.js/issues">GitHub issues page</a>. Finance.js is available for use under the <a href="https://github.com/essamjoubori/finance.js/blob/master/LICENSE.md">MIT software license</a>.
 
-<h2>Getting Started</h2>
+  <h2>Getting Started</h2>
 
-<ul>
-  <li>Download or fork the repository from GitHub.</li>
-  <li>Extract the file finance.js from the project and include it in your application.</li>
-</ul>
+  <ul>
+    <li>Download or fork the repository from GitHub.</li>
+    <li>Extract the file finance.js from the project and include it in your application.</li>
+  </ul>
 
-<h2>Working with Finance.js</h2>
+  <h2>Working with Finance.js</h2>
 
-<p>In order to use the library, you will need to first create a new instance of the class <strong>Finance</strong>.</p>
+  <p>In order to use the library, you will need to first create a new instance of the class <strong>Finance</strong>.</p>
 
-<pre><code>var finance = new Finance();</code></pre>
+  <pre><code>var finance = new Finance();</code></pre>
 
-<!-- Present Value (PV) -->
+  <!-- Present Value (PV) -->
 
-<h3>Present Value (PV)<br>
-<code class="highlight">finance.PV(rate, cash flow);</code></h3>
+  <h3 id="pv">Present Value (PV)<br>
+  <code class="highlight">finance.PV(rate, cash flow);</code></h3>
 
-<p>Present Value is the current worth of a future sum of money or stream of cash flows given a specified rate of return.<sup><a href="http://www.investopedia.com/terms/p/presentvalue.asp" target="_blank">1</a></sup></p>
+  <p>Present Value is the current worth of a future sum of money or stream of cash flows given a specified rate of return.<sup><a href="http://www.investopedia.com/terms/p/presentvalue.asp" target="_blank">1</a></sup></p>
 
-<pre><code>// e.g., If rate is 5% and cash flow is $100, the PV is $95.24.
+  <pre><code>// e.g., If rate is 5% and cash flow is $100, the PV is $95.24.
 
-finance.PV(5, 100);
-=> 95.24</code></pre>
+  finance.PV(5, 100);
+  => 95.24</code></pre>
 
-<!-- Future Value (FV) -->
+  <!-- Future Value (FV) -->
 
-<h3>Future Value (FV)<br>
-<code class="highlight">finance.FV(rate, cash flow, number of periods);</code></h3>
+  <h3 id="fv">Future Value (FV)<br>
+  <code class="highlight">finance.FV(rate, cash flow, number of periods);</code></h3>
 
-<p>Future Value is the value of an asset or cash at a specified date in the future that is equivalent in value to a specified sum today. <sup><a href="http://www.investopedia.com/terms/f/futurevalue.asp" target="_blank">2</a></sup></p>
+  <p>Future Value is the value of an asset or cash at a specified date in the future that is equivalent in value to a specified sum today. <sup><a href="http://www.investopedia.com/terms/f/futurevalue.asp" target="_blank">2</a></sup></p>
 
-<pre><code>// e.g., If rate is 0.5%, cash flow is $1,000, and the number of periods is 12, the FV is $1,061.68.
+  <pre><code>// e.g., If rate is 0.5%, cash flow is $1,000, and the number of periods is 12, the FV is $1,061.68.
 
-finance.FV(0.5, 1000, 12);
-=> 1068.68</code></pre>
+  finance.FV(0.5, 1000, 12);
+  => 1068.68</code></pre>
 
-<!-- Net Present Value (NPV) -->
+  <!-- Net Present Value (NPV) -->
 
-<h3>Net Present Value (NPV)<br>
-<code class="highlight">finance.NPV(rate, initial investment, [cash flows]);</code></h3>
+  <h3>Net Present Value (NPV)<br>
+  <code class="highlight">finance.NPV(rate, initial investment, [cash flows]);</code></h3>
 
-<p>Net Present Value compares the money received in the future to an amount of money received today, while accounting for time and interest [through the discount rate]. It's based on the principle of time value of money (TVM), which explains how time affects monetary value.  <sup><a href="http://www.investopedia.com/articles/fundamental-analysis/09/net-present-value.asp" target="_blank">3</a></sup></p>
+  <p>Net Present Value compares the money received in the future to an amount of money received today, while accounting for time and interest [through the discount rate]. It's based on the principle of time value of money (TVM), which explains how time affects monetary value.  <sup><a href="http://www.investopedia.com/articles/fundamental-analysis/09/net-present-value.asp" target="_blank">3</a></sup></p>
 
-<p><code>[cash flows]</code> takes any number of projected cash flows.</p>
+  <p><code>[cash flows]</code> takes any number of projected cash flows.</p>
 
-<pre><code>// e.g., If discount rate is 10%, initial investment is -$1,000, cash flow in year 1 is $200,000, year 2 is $300,000, and year 3 is $200,000, the NPV is $80,015.03.
+  <pre><code>// e.g., If discount rate is 10%, initial investment is -$1,000, cash flow in year 1 is $200,000, year 2 is $300,000, and year 3 is $200,000, the NPV is $80,015.03.
 
-finance.NPV(10, -500000, 200000, 300000, 200000);
-=> 80015.03</code></pre>
+  finance.NPV(10, -500000, 200000, 300000, 200000);
+  => 80015.03</code></pre>
 
-<!--
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
 
-<h3>
-<a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
 
-<h3>
-<a id="rather-drive-stick" class="anchor" href="#rather-drive-stick" aria-hidden="true"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
 
-<h3>
-<a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
 
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
 
-<h3>
-<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
 
-<p>Having trouble with Pages? Check out the documentation at <a href="https://help.github.com/pages">https://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section> -->
+
+
+
+
+
+
+
+  </section> 
+  <!--
+  <p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+
+  <pre><code>$ cd your_repo_root/repo_name
+  $ git fetch origin
+  $ git checkout gh-pages
+  </code></pre>
+
+  <p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+
+  <h3>
+  <a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
+
+  <p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+
+  <h3>
+  <a id="rather-drive-stick" class="anchor" href="#rather-drive-stick" aria-hidden="true"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
+
+  <p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+
+  <h3>
+  <a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+
+  <p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+
+  <h3>
+  <a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+
+  <p>Having trouble with Pages? Check out the documentation at <a href="https://help.github.com/pages">https://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
+        </section> -->
       <footer>
         <!-- <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p> -->
       </footer>
