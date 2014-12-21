@@ -60,7 +60,7 @@ blockquote {
 }
 
 .highlight {
-  background-color: #e1f0fa;
+  background-color: #e1f0fa !important;
 }
 
 code, pre {
