@@ -31,6 +31,7 @@
         <a class="link-header" href="#start">Getting Started</a><br>
         <a class="link-header" href="#work">Working with Finance.js</a><br>
         <strong><a class="link-child" href="#Amortization">Amortization (AM)</a></strong><br>
+        <strong><a class="link-child" href="#CAGR">Compound Annual Growth Rate (CAGR)</a></strong><br>
         <strong><a class="link-child" href="#CI">Compound Interest (CI)</a></strong><br>
         <strong><a class="link-child" href="#DF">Discount Factor (DF)</a></strong><br>
         <strong><a class="link-child" href="#FV">Future Value (FV)</a></strong><br>
@@ -90,6 +91,18 @@
 
   finance.AM(20000, 7.5, 60, 1);
   => 400.76</code></pre>
+
+  <!-- Compound Annual Growth Rate (CAGR) -->
+
+  <h3 id="CAGR">Compound Annual Growth Rate (CAGR)<br>
+  <code class="highlight">finance.CAGR(beginning value, ending value, number of periods);</code></h3>
+
+  <p>Compound Annual Growth Rate (CAGR) is the year-over-year growth rate of an investment over a specified period of time.<sup><a href="http://www.investopedia.com/terms/c/cagr.asp" target="_blank">2</a></sup></p>
+
+  <pre><code>// e.g., If the beginning value is $10,000, the ending value is $19,500, and the number of periods is 3, the CAGR is 24.93%.
+
+  finance.CAGR(10000, 19500, 3);
+  => 24.93</code></pre>
 
   <!-- Compound Interest (CI) -->
 
