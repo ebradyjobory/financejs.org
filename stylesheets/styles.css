@@ -108,7 +108,7 @@ header {
   position:fixed;
 }
 
-.downloads ul {
+header ul {
   list-style:none;
   height:40px;
   
@@ -128,7 +128,7 @@ header {
   width:270px;
 }
 
-.downloads li {
+header li {
   width:89px;
   float:left;
   height:40px;
@@ -154,7 +154,7 @@ header {
   text-decoration: none;
 }
 
-.downloads ul a {
+header ul a {
   line-height:1;
   font-size:11px;
   color:rgba(236, 240, 241,1.0);
@@ -169,17 +169,17 @@ strong {
   font-weight:700;
 }
 
-.downloads ul li + li {
+header ul li + li {
   width:88px;
   border-left:1px solid #fff;
 }
 
-.downloads ul li + li + li {
+header ul li + li + li {
   border-right:none;
   width:89px;
 }
 
-.downloads ul a strong {
+header ul a strong {
   font-size:14px;
   display:block;
   color: rgba(236, 240, 241,1.0);
@@ -237,7 +237,7 @@ footer {
     display:inline;
   }
   
-  .downloads ul {
+  header ul {
     position:absolute;
     right:50px;
     top:52px;
@@ -253,7 +253,7 @@ footer {
     padding:0;
   }
   
-  .downloads ul, header p.view {
+  header ul, header p.view {
     position:static;
   }
   
@@ -267,7 +267,7 @@ footer {
     padding:15px;
   }
   
-  .downloads ul {
+  header ul {
     display:none;
   }
 }
