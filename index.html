@@ -97,19 +97,10 @@
 
   <p>The Discount Factor (DF) is the factor by which a future cash flow must be multiplied in order to obtain the present value.<sup><a href="http://en.wikipedia.org/wiki/Discounting#Discount_factor" target="_blank">2</a></sup></p>
 
-  <p>For total number of payments which are entered as years, <code>[type]</code> takes a <code>0</code>, whereas for months <code>[type]</code> takes a <code>1</code>.</p>
+  <pre><code>// e.g., If rate is 10% and the number of periods is 6, the result is an array of discount factors: [1, 0.91, 0.827, 0.752, 0.684].
 
-  <pre><code>#Total Number of Payments Type = Years
-  // e.g., If principal is $20,000, rate is 7.5%, total number of payments is 5, and payment type is 0 (years), monthly payment is $400.76.
-
-  finance.AM(20000, 7.5, 5, 0);
-  => 400.76
-
-  #Total Number of Payments Type = Months
-  // e.g.,If principal is $20,000, rate is 7.5%, total number of payments is 60, and payment type is 1 (months), monthly payment is $400.76.
-
-  finance.AM(20000, 7.5, 60, 1);
-  => 400.76</code></pre>
+  finance.DF(10, 6);
+  => [1, 0.91, 0.827, 0.752, 0.684]</code></pre>
 
   <!-- Future Value (FV) -->
 
