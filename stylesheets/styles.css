@@ -47,13 +47,13 @@ a small {
   display:block;
 }
 
-.link-header a {
+.link-header {
   color:#222 !important;
   font-size:13px;
   text-decoration: underline !important;
 }
 
-.link-child a {
+.link-child {
   color:#222 !important;
   font-size:12px;
   margin-left: 20px;
