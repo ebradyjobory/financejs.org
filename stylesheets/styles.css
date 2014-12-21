@@ -47,6 +47,16 @@ a small {
   display:block;
 }
 
+.link-header a {
+  color:#222;
+}
+
+.link-child a {
+  color:#222;
+  font-size:12px;
+
+}
+
 .wrapper {
   width:860px;
   margin:0 auto;

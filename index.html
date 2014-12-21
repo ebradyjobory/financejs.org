@@ -27,8 +27,13 @@
         </ul>
         <p><small>Finance.js was created by <a href="http://essam.io">Essam Al Joubori</a>.</small></p>
         
-        <a href="#pv">Present Value (PV)</a>
-        <a href="#fv">Future Value (FV)</a>
+        <a class="link-header" href="#intro">Introduction</a><br>
+        <a class="link-header" href="#start">Getting Started</a><br>
+        <a class="link-header" href="#work">Working with Finance.js</a><br>
+        <a class="link-child" href="#pv">Present Value (PV)</a><br>
+        <a class="link-child" href="#fv">Future Value (FV)</a><br>
+        <a class="link-child" href="#npv">Net Present Value (NPV)</a><br>
+
     
       </header>
       
@@ -37,20 +42,20 @@
     <a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span class="octicon octicon-link"></span></a>Finance.js
   </h1>
 
-  <h2>Introduction</h2>
+  <h2 id="intro">Introduction</h2>
 
   <p>Finance.js makes it easy to incorporate common financial calculations into your application. The library is built on pure JavaScript without any dependencies.</p>
 
   <p>This project is <a href="https://github.com/essamjoubori/finance.js">hosted on GitHub</a>. You can report bugs and discuss features on the <a href="https://github.com/essamjoubori/finance.js/issues">GitHub issues page</a>. Finance.js is available for use under the <a href="https://github.com/essamjoubori/finance.js/blob/master/LICENSE.md">MIT software license</a>.
 
-  <h2>Getting Started</h2>
+  <h2 id="start">Getting Started</h2>
 
   <ul>
     <li>Download or fork the repository from GitHub.</li>
     <li>Extract the file finance.js from the project and include it in your application.</li>
   </ul>
 
-  <h2>Working with Finance.js</h2>
+  <h2 id="work">Working with Finance.js</h2>
 
   <p>In order to use the library, you will need to first create a new instance of the class <strong>Finance</strong>.</p>
 
@@ -82,7 +87,7 @@
 
   <!-- Net Present Value (NPV) -->
 
-  <h3>Net Present Value (NPV)<br>
+  <h3 id="npv">Net Present Value (NPV)<br>
   <code class="highlight">finance.NPV(rate, initial investment, [cash flows]);</code></h3>
 
   <p>Net Present Value compares the money received in the future to an amount of money received today, while accounting for time and interest [through the discount rate]. It's based on the principle of time value of money (TVM), which explains how time affects monetary value.  <sup><a href="http://www.investopedia.com/articles/fundamental-analysis/09/net-present-value.asp" target="_blank">3</a></sup></p>
