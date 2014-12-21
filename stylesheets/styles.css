@@ -48,13 +48,15 @@ a small {
 }
 
 .link-header a {
-  color:#222;
+  color:#222 !important;
+  font-size:13px;
+  text-decoration: underline !important;
 }
 
 .link-child a {
-  color:#222;
+  color:#222 !important;
   font-size:12px;
-
+  margin-left: 20px;
 }
 
 .wrapper {
