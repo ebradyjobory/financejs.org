@@ -35,6 +35,8 @@
         <a class="link-child" href="#NPV">Net Present Value (NPV)</a><br>
         <a class="link-child" href="#PP">Payback Period (PP)</a><br>
         <a class="link-child" href="#ROI">Return on Investment (ROI)</a><br>
+        <!-- <a class="link-child" href="#IRR">Internal Rate of Return (IRR)</a><br> -->
+        <a class="link-child" href="#Amortization">Amortization</a><br>
 
         <br><br>
         <p><small>Finance.js was created by <a href="http://essam.io">Essam Al Joubori</a>.</small></p>
@@ -138,10 +140,39 @@
   finance.ROI(-55000, 60000);
   => 9.09</code></pre>
 
+<!-- 
+Internal Rate of Return (IRR)
 
+  <h3 id="IRR">Internal Rate of Return (IRR)<br>
+  <code class="highlight">finance.IRR(initial investment, [cash flows]);</code></h3>
 
+  <p>Internal Rate of Return (IRR) is a simple calculation that tells you the bottom line return of any investment.  <sup><a href="http://www.investopedia.com/articles/basics/10/guide-to-calculating-roi.asp" target="_blank">5</a></sup></p>
 
+  <pre><code>// e.g., If initial investment is -$55,000 and the earnings are $60,000, the return on investment is 9.09%.
 
+  finance.ROI(-55000, 60000);
+  => 9.09</code></pre> -->
+
+<!-- Amortization -->
+
+  <h3 id="Amortization">Amortization<br>
+  <code class="highlight">finance.AM(principal, rate, total number of payments, [type]);</code></h3>
+
+  <p>Amortization is the paying off of debt with a fixed repayment schedule in regular installments over a period of time.  <sup><a href="http://www.investopedia.com/terms/a/amortization.asp" target="_blank">6</a></sup></p>
+
+  <p>For total number of payments which are entered as years, <code>[type]</code> takes a <code>0</code>, whereas for months <code>[type]</code> takes a <code>1</code>.</p>
+
+  <pre><code>#Total Number of Payments Type = Years
+  // e.g., If principal is $20,000, rate is 7.5%, total number of payments is 5, and payment type is 0 (years), monthly payment is $400.76.
+
+  finance.AM(20000, 7.5, 5, 0);
+  => 400.76
+
+  #Total Number of Payments Type = Months
+  // e.g.,If principal is $20,000, rate is 7.5%, total number of payments is 60, and payment type is 1 (months), monthly payment is $400.76.
+
+  finance.AM(20000, 7.5, 60, 1);
+  => 400.76</code></pre>
 
 
 
