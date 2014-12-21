@@ -21,7 +21,9 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size:32px;
+  font-size:40px;
+  font-weight: lighter;
+  margin-top: -10px;
 }
 
 h2 {
