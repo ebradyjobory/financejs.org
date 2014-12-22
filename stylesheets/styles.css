@@ -1,10 +1,13 @@
-@import url(https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700);
+@import url(https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,400,700);
 
 body {
   padding:50px;
   font:14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color:#777;
-  font-weight:300;
+  color:#202020;
+  font-weight:400;
+  background: url(https://s3.amazonaws.com/financejs/crossword.png);
+  background-repeat: repeat;
+
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -125,9 +128,10 @@ header {
 .sidebar {
   padding-top: 50px;
   padding-left: 50px;
-  /*background: #fff;*/
+  padding-right: 25;
+  background: #fff;
   position: fixed;
-  /*z-index: 10;*/
+  z-index: 10;
   top: 0;
   left: 0;
   bottom: 0;
@@ -135,11 +139,11 @@ header {
   overflow-y: auto;
   overflow-x: hidden;
   -webkit-overflow-scrolling: touch;
-  /*padding: 15px 0 30px 30px;
-  border-right: 1px solid #bbb;*/
-  /*box-shadow: 0 0 20px #ccc;
+  /*padding: 15px 0 30px 30px;*/
+  border-right: 1px solid #bbb;
+  box-shadow: 0 0 20px #ccc;
   -webkit-box-shadow: 0 0 20px #ccc;
-  -moz-box-shadow: 0 0 20px #ccc;*/
+  -moz-box-shadow: 0 0 20px #ccc;
 }
 
 div.main-content {
