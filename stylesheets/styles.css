@@ -25,9 +25,11 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size:50px;
-  font-weight: lighter;
+  font-family: 'Open Sans', sans-serif;
+  font-size:60px;
+  font-weight: 300;
   margin-top: -10px;
+  text-transform: uppercase;
 }
 
 h2 {
