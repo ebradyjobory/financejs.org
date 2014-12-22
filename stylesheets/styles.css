@@ -278,6 +278,10 @@ footer {
     padding: 10px 0 10px 30px;
     border: 0;
   }
+
+  h1 {
+    font-size: 50px;
+  }
   
   header, section, footer {
     float:none;
