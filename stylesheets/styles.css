@@ -53,7 +53,7 @@ a small {
 .link-header {
   color:#222 !important;
   font-size:13px;
-  text-decoration: underline !important;
+  text-decoration: none !important;
   line-height: 30px;
 }
 
@@ -62,7 +62,7 @@ a small {
   font-size:12px;
   margin-left: 20px;
   line-height: 20px;
-  font-weight: bolder;
+  font-weight: 300 !important;
 }
 
 .wrapper {
@@ -128,7 +128,7 @@ header {
 .sidebar {
   padding-top: 50px;
   padding-left: 50px;
-  padding-right: 25;
+  padding-right: 25px;
   background: #fff;
   position: fixed;
   z-index: 10;
