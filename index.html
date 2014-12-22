@@ -43,6 +43,7 @@
         <strong><a class="link-child" href="#PI">Profitability Index (PI)</a></strong><br>
         <strong><a class="link-child" href="#ROI">Return on Investment (ROI)</a></strong><br>
         <strong><a class="link-child" href="#R72">Rule of 72 (R72)</a></strong><br>
+        <strong><a class="link-child" href="#WACC">Weighted Average Cost of Capital (WACC)</a></strong><br>
         <a class="link-header" href="#examples">Example Applications</a><br>
         <br><br>
         <p><small>Finance.js was created by <a href="http://essam.io">Essam Al Joubori</a>.</small></p>
@@ -257,7 +258,20 @@ Internal Rate of Return (IRR)
 <h2 id="examples">Example Applications</h2>
 <p><a href="https://rapidnpv.herokuapp.com/" target="_blank">RapidNPV</a></p>
 
+  <!-- Weighted Average Cost of Capital (WACC) -->
 
+  <h3 id="R72">Weighted Average Cost of Capital (WACC)<br>
+  <code class="highlight">finance.WACC(market value of equity, market value of debt, cost of equity, cost of debt, tax rate);</code></h3>
+
+  <p>Weighted Average Cost of Capital (WACC) is the rate that a company is expected to pay on average to all its security holders to finance its assets.<sup><a href="http://en.wikipedia.org/wiki/Weighted_average_cost_of_capital" target="_blank">10</a></sup></p>
+
+  <pre><code>// e.g., If market value of equity is $600,000, market value of debt is $400,000, cost of equity is 6%, cost of debt is 5%, and tax rate is 35%, WACC is 4.9%.
+
+  finance.WACC(600000, 400000, 6, 5, 35);
+  => 4.9</code></pre>
+
+<h2 id="examples">Example Applications</h2>
+<p><a href="https://rapidnpv.herokuapp.com/" target="_blank">RapidNPV</a></p>
 
 
 
