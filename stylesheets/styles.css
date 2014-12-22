@@ -123,6 +123,8 @@ header {
 }
 
 .sidebar {
+  padding-top: 50px;
+  padding-left: 50px;
   /*background: #fff;*/
   position: fixed;
   /*z-index: 10;*/
@@ -143,7 +145,7 @@ header {
 div.main-content {
   position: relative;
   width: 550px;
-  margin: 40px 0 50px 260px;
+  margin: -10px 0 0 280px;
 }
 
 header ul {
@@ -253,7 +255,7 @@ footer {
     width:auto;
     margin:0;
   }
-  
+
   div.main-content {
     width: auto !important;
     margin: 0px 0px 0px 0px !important;
