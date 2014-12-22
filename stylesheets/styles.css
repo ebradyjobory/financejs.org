@@ -253,6 +253,17 @@ footer {
     width:auto;
     margin:0;
   }
+
+    .sidebar {
+    -webkit-overflow-scrolling: initial;
+    position: relative;
+    width: 90%;
+    height: 120px;
+    left: 0;
+    top: -7px;
+    padding: 10px 0 10px 30px;
+    border: 0;
+  }
   
   header, section, footer {
     float:none;
@@ -285,17 +296,6 @@ footer {
 @media print, screen and (max-width: 720px) {
   body {
     word-wrap:break-word;
-  }
-
-  .sidebar {
-    -webkit-overflow-scrolling: initial;
-    position: relative;
-    width: 90%;
-    height: 120px;
-    left: 0;
-    top: -7px;
-    padding: 10px 0 10px 30px;
-    border: 0;
   }
   
   header {
