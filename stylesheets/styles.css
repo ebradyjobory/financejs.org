@@ -140,11 +140,11 @@ header {
   -moz-box-shadow: 0 0 20px #ccc;*/
 }
 
-div.main-content {
+/*div.main-content {
   position: relative;
   width: 550px;
   margin: 40px 0 50px 260px;
-}
+}*/
 
 header ul {
   list-style:none;
