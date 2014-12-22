@@ -42,6 +42,7 @@
         <strong><a class="link-child" href="#PV">Present Value (PV)</a></strong><br>
         <strong><a class="link-child" href="#PI">Profitability Index (PI)</a></strong><br>
         <strong><a class="link-child" href="#ROI">Return on Investment (ROI)</a></strong><br>
+        <strong><a class="link-child" href="#R72">Rule of 72 (R72)</a></strong><br>
         <a class="link-header" href="#examples">Example Applications</a><br>
         <br><br>
         <p><small>Finance.js was created by <a href="http://essam.io">Essam Al Joubori</a>.</small></p>
@@ -160,7 +161,7 @@ Internal Rate of Return (IRR)
   <code class="highlight">finance.LR(total liabilities, total debts, total income);</code></h3>
 
   <p>Leverage Ratio (LR) is used to calculate the financial leverage of a company or individual to get an idea of the methods of financing or to measure ability to meet financial obligations.<sup><a href="http://www.investopedia.com/terms/l/leverageratio.asp" target="_blank">2</a></sup></p>
-  
+
   <pre><code>// e.g., If total liabilities are $25, total debts are $10, and total income is $20, the leverage ratio is 1.75.
 
   finance.LR(25, 10, 20);
@@ -240,6 +241,18 @@ Internal Rate of Return (IRR)
 
   finance.ROI(-55000, 60000);
   => 9.09</code></pre>
+
+  <!-- Rule of 72 (R72) -->
+
+  <h3 id="R72">Rule of 72 (R72)<br>
+  <code class="highlight">finance.R72(rate);</code></h3>
+
+  <p>Rule of 72 (R72) is a rule stating that in order to find the number of years required to double your money at a given interest rate, you divide the compound return into 72.<sup><a href="http://www.investopedia.com/terms/r/ruleof72.asp" target="_blank">10</a></sup></p>
+
+  <pre><code>// e.g., If annual rate is 10%, rule of 72 is 7.2 years.
+
+  finance.R72(10);
+  => 7.2</code></pre>
 
 <h2 id="examples">Example Applications</h2>
 <p><a href="https://rapidnpv.herokuapp.com/" target="_blank">RapidNPV</a></p>
