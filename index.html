@@ -16,21 +16,22 @@
     <div class="wrappper">
     <div class="sidebar">
       <header>
-        <h3>Finance.js (1.0.0)</h3>
+        <h3>Finance.js (2.0.0)</h3>
         <p>A JavaScript library for financial calculations.</p>
 
         <p class="view"><a href="https://github.com/essamjoubori/finance.js">View Source Code <small>essamjoubori/financejs</small></a></p>
 
         <ul>
           <li><a href="https://github.com/essamjoubori/finance.js/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/essamjoubori/finance.js/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://www.npmjs.com/package/financejs">Install <strong>NPM Package</strong></a></li>
           <li><a href="https://github.com/essamjoubori/finance.js">Fork On <strong>GitHub</strong></a></li>
         </ul>
         
         
         <a class="link-header" href="#intro">Introduction</a><br>
         <a class="link-header" href="#start">Getting Started</a><br>
-        <a class="link-header" href="#work">Working with Finance.js</a><br>
+        <a class="link-header" href="#example-usage">Example Usage</a><br>
+        <a class="link-header" href="#tests">Tests</a><br>
         <strong><a class="link-child" href="#Amortization">Amortization (AM)</a></strong><br>
         <strong><a class="link-child" href="#CAGR">Compound Annual Growth Rate (CAGR)</a></strong><br>
         <strong><a class="link-child" href="#CI">Compound Interest (CI)</a></strong><br>
@@ -64,16 +65,26 @@
 
   <h2 id="start">Getting Started</h2>
 
+  <pre><code>npm install financejs --save</code></pre>
+
+  <p><strong>or</strong></p>
+
   <ul>
     <li>Download or fork the repository from GitHub.</li>
     <li>Extract the file finance.js from the project and include it in your application.</li>
   </ul>
 
-  <h2 id="work">Working with Finance.js</h2>
+  <h2 id="example-usage">Example Usage</h2>
 
-  <p>In order to use the library, you will need to first create a new instance of the class <strong>Finance</strong>.</p>
+  <pre><code>var Finance = require('financejs');<br>
+  var finance = new Finance();<br><br>
+  // To calculate Amortization<br>
+  finance.AM(20000, 7.5, 5, 0);<br>
+  // => 400.76</code></pre>
 
-  <pre><code>var finance = new Finance();</code></pre>
+  <h2 id="tests">Tests</h2>
+
+  <pre><code>npm test</code></pre>
 
 <!-- Amortization -->
 
