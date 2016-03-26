@@ -16,7 +16,7 @@
     <div class="wrappper">
     <div class="sidebar">
       <header>
-        <h3>Finance.js (2.0.1)</h3>
+        <h3>Finance.js (3.0.0)</h3>
         <p>A JavaScript library for financial calculations.</p>
 
         <p class="view"><a href="https://github.com/essamjoubori/finance.js">View Source Code <small>essamjoubori/financejs</small></a></p>
@@ -26,8 +26,8 @@
           <li><a href="https://www.npmjs.com/package/financejs">Install <strong>npm</strong></a></li>
           <li><a href="https://github.com/essamjoubori/finance.js">Fork On <strong>GitHub</strong></a></li>
         </ul>
-        
-        
+
+
         <a class="link-header" href="#intro">Introduction</a><br>
         <a class="link-header" href="#start">Getting Started</a><br>
         <a class="link-header" href="#example-usage">Example Usage</a><br>
@@ -39,6 +39,7 @@
         <strong><a class="link-child" href="#FV">Future Value (FV)</a></strong><br>
         <strong><a class="link-child" href="#IRR">Internal Rate of Return (IRR)</a></strong><br>
         <strong><a class="link-child" href="#LR">Leverage Ratio (LR)</a></strong><br>
+        <strong><a class="link-child" href="#PMT">Loan Payment Per Period (PMT)</a></strong><br>
         <strong><a class="link-child" href="#NPV">Net Present Value (NPV)</a></strong><br>
         <strong><a class="link-child" href="#PP">Payback Period (PP)</a></strong><br>
         <strong><a class="link-child" href="#PV">Present Value (PV)</a></strong><br>
@@ -155,7 +156,7 @@
   finance.FV(0.5, 1000, 12);
   => 1061.68</code></pre>
 
-  
+
   <!-- Internal Rate of Return (IRR) -->
 
   <h3 id="IRR">Internal Rate of Return (IRR)<br>
@@ -166,7 +167,7 @@
   <pre><code>// e.g., If initial investment is -$500,000 and the cash flows are $200,000, $300,000, and $200,000, IRR is 18.82%.
 
   finance.IRR(-500000, 200000, 300000, 200000);
-  => 18.82</code></pre> 
+  => 18.82</code></pre>
 
   <!-- Leverage Ratio (LR) -->
 
@@ -279,14 +280,21 @@
   finance.WACC(600000, 400000, 6, 5, 35);
   => 4.9</code></pre>
 
+  <!-- Weighted Average Cost of Capital (WACC) -->
+
+  <h3 id="PMT">Loan Payment Per Period (PMT)<br>
+  <code class="highlight">finance.PMT(fractional interest rate, number of payments, principal);</code></h3>
+
+   <p>Payment for a loan based on constant payments and a constant interest rate</p>
+
+  <pre><code>
+    finance.PMT(0.02,36,-1000000);
+  => 39232.8526</code></pre>
+
 <h2 id="examples">Example Applications</h2>
 <p><a href="http://rapidnpv.cuneiform.io/" target="_blank">RapidNPV</a></p>
 
-
-
-
-  
-  </section> 
+  </section>
   </div>
   <!--
   <p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
